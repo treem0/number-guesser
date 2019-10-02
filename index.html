@@ -14,19 +14,21 @@
         <h1>Welcome to My Guessing Game</h1>
     </header>
     <section class="rules">
-        <h2>Choose a number between 1-10</h2>
+        <h2>Choose a number between 1-20</h2>
     </section>
     <section class="input">
         <input id="guess">
         <button id="result-button">Did you guess right?</button>
     </section>
     <section class="results">
-        <p id="tries-remaining"></p>
-        <p id="low-or-high"></p>
-        <p id="winorlose"></p>
+        <span id="tries-remaining"></span>
+        <span id="low" class="hidden">You answer is too low.</span>
+        <span id="lose" class="hidden">You lose :(</span>
+        <span id="win" class="hidden">You are a Winner!</span>
+        <span id="high" class="hidden">You answer is too high!</span>
     </section>
 
-    <script src="app.js"></script>
+    <script type='module' src="app.js"></script>
 </body>
 
 </html>
